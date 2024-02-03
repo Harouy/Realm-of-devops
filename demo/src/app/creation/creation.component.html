@@ -1,0 +1,13 @@
+<div class="form">
+  <div class="labels">
+    <label for="lastname">lastname: </label>
+    <label for="firstname">firstname: </label>
+    <label for="email">email: </label>
+    <button class="btn" (click)="Onsubmit()">Create</button>
+  </div>
+  <div class="inputs">
+    <input id="lastname" type="text" [formControl]="lastname" />
+    <input id="firstname" type="text" [formControl]="firtsname" />
+    <input id="email" type="text" [formControl]="email" />
+  </div>
+</div>

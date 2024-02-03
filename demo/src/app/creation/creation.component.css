@@ -1,0 +1,31 @@
+.form {
+  display: flex;
+  gap: 5rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  border: 2px solid black;
+}
+.labels {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin: 2px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 10%;
+  box-shadow: black;
+}
+.inputs input {
+  box-sizing: border-box; /* Include padding and border in the total width/height */
+  border: 1px solid #ccc; /* Add a border to the input */
+  border-radius: 4px;
+  margin-top: 0.1rem;
+}

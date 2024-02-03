@@ -1,0 +1,20 @@
+<div class="table">
+  <div class="table_head">
+    <div class="table_item">ID</div>
+    <div class="table_item">Lastname</div>
+    <div class="table_item">Firstname</div>
+    <div class="table_item">Email</div>
+  </div>
+  @for (student of students;track student.id){
+  <div class="table_body">
+    <div class="table_item">{{ student.id }}</div>
+    <div class="table_item">{{ student.lastname }}</div>
+    <div class="table_item">{{ student.firstname }}</div>
+
+    <div class="table_item">{{ student.email }}</div>
+    <div class="table_item">
+      <button class="btndel" (click)="Deletestudent(student.id)">Delete</button>
+    </div>
+  </div>
+  }
+</div>
